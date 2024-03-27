@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Swiftie Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Swiftie Survey Form</h1>
+        <p id="description">This survey aims to determine <b>Taylor Swift</b>'s best releases based on Swifties' favorites.
+            <br>Thank you for participating in this survey, all's well that ends well!
+        </p>
+        <form id="survey-form">
+            <div class="input-element">
+                <label id="name-label"><b>Name</b></label>
+                <input placeholder="It's me, hi!" id="name" type="text" required/>
+            </div>
+            <div class="input-element">
+                <label id="email-label"><b>Email</b></label>
+                <input placeholder="I have a blank space, baby" id="email" type="email" required/>
+            </div>
+            <div class="input-element">
+                <label id="number-label"><b>Age</b></label>
+                <input placeholder="I have this thing where I get older" id="number" min="5" max="100" type="number" required/>
+            </div>
+            <hr/>
+            <div class="input-element">
+                <label id="select-label"><b>What is your favorite Taylor Swift album?</b></label>
+                <select id="dropdown">
+                    <option>Taylor Swift</option>
+                    <option>Fearless (TV)</option>
+                    <option>Speak Now (TV)</option>
+                    <option>Red (TV)</option>
+                    <option>1989 (TV)</option>
+                    <option>reputation</option>
+                    <option>Lover</option>
+                    <option>folklore</option>
+                    <option>evermore</option>
+                    <option>Midnights</option>
+                </select>
+            </div>
+            <hr/>
+            <div>
+                <label><b>Have you been to any Taylor Swift concert/tour?</b></label>
+                <div>
+                    <label><input type="radio" name="concert" value="yes"/>Yes</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="concert" value="no"/>No</label>
+                </div>
+            </div>
+            <hr/>
+            <div>
+                <label><b>What is/are your favorite Taylor Swift documentary/film?</b></label>
+                <div>
+                    <label><input type="checkbox" name="vault" value="speak"/>Speak Now World Tour Live (2011)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="1889"/>The 1989 World Tour Live (2015)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="reputation"/>Reputation Stadium Tour (2018)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="americana"/>Miss Americana (2020)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="lover"/>City of Lover (2020)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="folklore"/>Folklore: The Long Pond Studio Sessions (2020)</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="vault" value="folklore"/>The Eras Tour (2023)</label>
+                </div>
+            </div>
+            <hr/>
+            <div class="input-element">
+                <label><b>Additional comments about your favorite Taylor Swift lines.</b></label>
+                <textarea placeholder="To live for the hope of it all!" type="text"></textarea>
+            </div>
+            <button type="submit" id="submit">
+                Submit
+            </button>
+        </form>
+    </body>
+</html>
